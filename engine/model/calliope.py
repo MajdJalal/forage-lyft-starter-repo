@@ -9,5 +9,5 @@ class Calliope(Car):
     def __init__(self, engin, battery):
         super.__init__(engin, battery)
     def needs_service(self):
-        return self.engin.needs_service() or self.battery.needs_service()
+        return self.engine.needs_service() or self.battery.needs_service()
    

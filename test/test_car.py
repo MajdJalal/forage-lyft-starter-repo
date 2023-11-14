@@ -1,11 +1,13 @@
 import unittest
 from datetime import datetime
 
-from engine import carFactory
+import engine.model
 
 
 
-factory = carFactory()
+
+
+factory = engine.model.carFactory()
 
 class TestCalliope(unittest.TestCase):
     def test_battery_should_be_serviced(self):

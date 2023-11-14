@@ -1,9 +1,9 @@
 
-from engine.NubbinBattery import NubbinBattery
-from engine.SpindlerBattery import SpindlerBattery
-from engine.capulet_engine import CapuletEngine
-from engine.sternman_engine import SternmanEngine
-from engine.willoughby_engine import WilloughbyEngine 
+from engine.Batteries.NubbinBattery import NubbinBattery
+from engine.Batteries.SpindlerBattery import SpindlerBattery
+from engine.Engines.capulet_engine import CapuletEngine
+from engine.Engines.sternman_engine import SternmanEngine
+from engine.Engines.willoughby_engine import WilloughbyEngine 
 
 class carFactory():
     @staticmethod

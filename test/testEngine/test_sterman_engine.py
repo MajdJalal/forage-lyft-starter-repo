@@ -1,7 +1,9 @@
 import unittest
 
-from engine.sternman_engine import SternmanEngine
 
+import sys
+sys.path.append('C:\\Users\\PC\\Desktop\\forage-lyft-starter-repo')
+from engine.Engines.sternman_engine import SternmanEngine
 
 class TestSternmanEngine(unittest.TestCase):
     def test_needs_service_true(self):
@@ -13,3 +15,7 @@ class TestSternmanEngine(unittest.TestCase):
         warning_light_is_on = False
         engine = SternmanEngine(warning_light_is_on)
         self.assertFalse(engine.needs_service())
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,7 +1,8 @@
 import unittest
 
-from engine.willoughby_engine import WilloughbyEngine
-
+import sys
+sys.path.append('C:\\Users\\PC\\Desktop\\forage-lyft-starter-repo')
+from engine.Engines.willoughby_engine import WilloughbyEngine
 
 class TestWilloughbyEngine(unittest.TestCase):
     def test_needs_service_true(self):
@@ -15,3 +16,6 @@ class TestWilloughbyEngine(unittest.TestCase):
         last_service_mileage = 0
         engine = WilloughbyEngine(current_mileage, last_service_mileage)
         self.assertFalse(engine.needs_service())
+
+if __name__ == '__main__':
+    unittest.main()

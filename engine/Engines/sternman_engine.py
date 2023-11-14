@@ -1,9 +1,11 @@
 from abc import ABC
 
-from engine import engine
+import sys
+sys.path.append('C:\\Users\\PC\\Desktop\\forage-lyft-starter-repo')
+from engine.Engines.engine import engine
 
 
-class SternmanEngine(engine, ABC):
+class SternmanEngine(engine):
     def __init__(self,  warning_light_is_on):
         self.warning_light_is_on = warning_light_is_on
 

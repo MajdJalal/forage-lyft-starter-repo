@@ -1,4 +1,6 @@
-from Battery import Battery
+import sys
+sys.path.append('C:\\Users\\PC\\Desktop\\forage-lyft-starter-repo')
+from engine.Batteries.Battery import Battery
 
 class SpindlerBattery(Battery):
     def __init__(self, last_service_date, current_date):
@@ -6,4 +8,4 @@ class SpindlerBattery(Battery):
         self.current_date = current_date
     
     def needs_service(self):
-        return self.current_date.year - self.last_service_date.year > 3 and self.current_date.month > self.last_service_date.month and self.current_date.days > self.last_service_date.days
+        return self.current_date.year - self.last_service_date.year >= 2 

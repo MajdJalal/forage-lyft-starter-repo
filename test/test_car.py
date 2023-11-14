@@ -1,13 +1,15 @@
 import unittest
 from datetime import datetime
-
-import engine.model
-
-
-
+import sys
+sys.path.append('C:\\Users\\PC\\Desktop\\forage-lyft-starter-repo')
+from engine.model import carFactory 
 
 
-factory = engine.model.carFactory()
+
+
+
+
+factory = carFactory()
 
 class TestCalliope(unittest.TestCase):
     def test_battery_should_be_serviced(self):

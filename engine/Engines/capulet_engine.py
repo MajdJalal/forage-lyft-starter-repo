@@ -1,9 +1,10 @@
 from abc import ABC
+import sys
+sys.path.append('C:\\Users\\PC\\Desktop\\forage-lyft-starter-repo')
+from engine.Engines.engine import engine
 
-from engine import engine
 
-
-class CapuletEngine(ABC, engine):
+class CapuletEngine(engine):
     def __init__(self, current_mileage, last_service_mileage):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
